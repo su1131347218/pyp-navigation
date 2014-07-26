@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<FrameLayout
+            android:id="@+id/main_titlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/all_bg_color" >
+
+            <Button
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/main_titlebar_menu_selector"
+                    android:id="@+id/main_titlebar_left_menu"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/main_title"
+                    android:textSize="24sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"/>
+
+            <Button
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/main_titlebar_menu_selector"
+                    android:id="@+id/main_titlebar_right_menu"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"/>
+        </FrameLayout>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_text"
+            android:layout_gravity="center"
+            android:id="@+id/setting_btn1"/>
+
+</FrameLayout>

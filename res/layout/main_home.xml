@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white">
+<FrameLayout
+            android:id="@+id/main_titlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/all_bg_color" >
+
+            <Button
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/main_titlebar_menu_selector"
+                    android:id="@+id/main_titlebar_left_menu"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:text="@string/main_title"
+                    android:textSize="24sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"/>
+
+            <Button
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/main_titlebar_menu_selector"
+                    android:id="@+id/main_titlebar_right_menu"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"/>
+        </FrameLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_ignored_view"
+        android:layout_alignParentTop="true"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical" >
+
+      <!--  <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginBottom="30dp"
+            android:layout_width="85dp"
+            android:layout_height="81dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/loading" />
+      --> 
+      
+      <!-- 使用 开源项目 GifView 来显示动态Gif -->
+		<com.ant.liao.GifView 
+		    android:id="@+id/main_imageView"  
+            android:layout_width="170px"
+            android:layout_height="160px"
+            android:layout_marginBottom="30dp"
+            />
+        
+        
+        
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_textview_text"
+                android:id="@+id/main_textView" 
+                android:layout_gravity="center" 
+                android:clickable="false"
+                android:textColor="#ffacacac" 
+                android:textSize="17sp" 
+                android:padding="5dp"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_button_selector"
+                android:textColor="@android:color/white"
+                android:text="@string/home_button_text"
+                android:textSize="17sp"
+                android:padding="12dp"
+                android:id="@+id/main_btn_open_menu"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:layout_gravity="bottom"
+            android:id="@+id/main_ignored_view"
+            android:layout_alignParentBottom="true">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_frame"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_textview2_text"
+                android:textSize="17sp"
+                android:textColor="#9a9a9a"
+                android:id="@+id/main_textView1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="5dp"/>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<resources>
+
+    <string name="app_name">PYP-Navigation</string>
+
+    <string name="calendar_text">日历页面</string>
+
+    <string name="home_textview_text">← 左右拽动弹出导航栏 →</string>
+
+    <string name="home_button_text">点击按钮弹出导航栏</string>
+
+    <string name="home_textview2_text">这个区域屏蔽了手势菜单，在这个区域内可以做一些页面拖动的操作，而不会弹出菜单！</string>
+
+    <string name="main_title">番职e家</string>
+
+    <string name="profile_text">简况页面</string>
+
+    <string name="settings_text">换肤功能</string>
+    
+    <string name="title_activity_main">小树代码箱</string>
+    
+    <!-- 标识为菜单栏方向，无需更改 -->
+    <item type="id" name="addToMenu_onclick"/>
+    
+    <!-- 标识为onclick事件，无需更改 -->
+    <item type="id" name="addToMenu_direction"/>
+    
+    
+    <!-- Test-Fragment -->
+    <string name="test_fragment_one">社团列表</string>
+    <string name="test_fragment_two">社团活动</string>
+    <string name="test_fragment_three">最新消息</string>
+    <string name="association_main_search_text">搜索社团信息和活动</string>
+</resources>
